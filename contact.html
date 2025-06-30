@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Jane Doe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="sidebar">
+      <div class="sidebar-title">JANE DOE</div>
+      <a href="about.html">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="content">
+      <h2>CONTACT</h2>
+      <p>
+        <strong>Email:</strong> janedoe@loremipsum.com<br><br>
+        <strong>Socials:</strong><br>
+        <a href="#">LinkedIn</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Behance</a>
+      </p>
+      <br>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="6" placeholder="Message..." required></textarea>
+
+        <script src="script/script.js"></script>
+
+        <button onclick="confirmation()">SEND</button>
+        <p id="demo"></p>
+        
+        <script>
+        
+        function confirmation() {
+            var txt;
+            if (confirm("Are you sure you want to send this message?")) {
+                txt = "Message Sent";
+            } else {
+                txt = "Message Unsent";
+            }
+            document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+    
+      </form>
+    </div>
+  </div>
+</body>
+</html>
